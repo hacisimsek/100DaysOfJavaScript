@@ -1,0 +1,23 @@
+#counter-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  width: 100vw;
+}
+.counter-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(44, 31, 31);
+}
+
+.btn {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
