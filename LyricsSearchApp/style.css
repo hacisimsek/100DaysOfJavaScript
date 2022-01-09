@@ -1,0 +1,131 @@
+/* RESET STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+:root {
+  --bg_light: #fafafa;
+  --green: rgb(182, 119, 119);
+  --text_dark: #1e2432;
+  --red: #ff1e42;
+  --darkred: #c3112d;
+  --orange: #ff8c00;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  -webkit-appearance: none;
+}
+
+button,
+input {
+  border: none;
+  background: none;
+  outline: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font: 1rem/1.3 'Roboto', sans-serif;
+  background: var(--bg_light);
+  color: var(--text_dark);
+  padding: 70px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* HEADER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+form {
+  display: flex;
+  justify-content: center;
+}
+form input {
+  width: 40%;
+  padding: 0.5rem;
+  border: 1px solid var(--text_dark);
+  border-radius: 5px;
+  margin-right: 1rem;
+}
+form button {
+  width: 10%;
+  padding: 0.5rem;
+  border: 1px solid var(--text_dark);
+  border-radius: 5px;
+  background: var(--green);
+  color: var(--bg_light);
+  cursor: pointer;
+}
+form button:hover {
+  border: 1px solid #fff;
+}
+
+/* SECTION #1
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+section .container {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.songs {
+  width: 70%;
+  list-style: none;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.songs li {
+  font-size: 1.4rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.songs li span {
+  font-size: 1.4rem;
+  background-color: var(--color-primary);
+  padding: 5px;
+  margin: 5px;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

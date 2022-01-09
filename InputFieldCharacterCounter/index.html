@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Input Field Character Counter</title>
+  </head>
+  <body>
+    <h1>Input Field Character Counter</h1>
+    <form name="form_main">
+      <textarea
+        name="text"
+        id="text"
+        cols="100"
+        rows="10"
+        oninput="countText()"
+      ></textarea>
+      <div class="form-group">
+        <label for="characters">Characters : </label>
+        <span id="characters"></span><br />
+        <label for="words">Words: </label>
+        <span id="words"></span><br />
+        <label for="rows">Lines: </label>
+        <span id="rows"></span><br />
+      </div>
+    </form>
+  </body>
+  <script src="./app.js"></script>
+</html>
