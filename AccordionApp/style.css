@@ -1,0 +1,38 @@
+body {
+  margin: 0 auto;
+  background-color: #f2f2f2;
+}
+.container {
+  width: 50%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+.container h2 {
+  font-size: 2rem;
+  color: #000;
+  text-align: center;
+}
+.accordion {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+  color: white;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
