@@ -1,10 +1,9 @@
 document.getElementById('output').style.visibility = 'hidden';
 document.getElementById('lbsInput').addEventListener('input', function (e) {
   document.getElementById('output').style.visibility = 'visible';
-  let lbs = e.target.value;
-  document.getElementById('gramsOutput').innerHTML = lbs / 0.0022046;
+  let kg = e.target.value;
 
-  document.getElementById('kgOutput').innerHTML = lbs / 2.2046;
+  document.getElementById('poundsOutput').innerHTML = (kg * 2.20462262185).toFixed(7);
 
-  document.getElementById('ozOutput').innerHTML = lbs * 16;
+  document.getElementById('ozOutput').innerHTML = (kg * 35.2739619495).toFixed(7);
 });
