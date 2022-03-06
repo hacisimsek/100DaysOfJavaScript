@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- normalize css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Wikipedia Search App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Wikipedia Search App</h1>
+      </div>
+      <form id="searchForm" class="form-container">
+        <input id="searchInput" type="text" autocomplete="off" class="search-input" />
+        <button for="search">Search</button>
+      </form>
+      <div id="resultsList" class="result-list"></div>
+    </div>
+  </body>
+
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./app.js"></script>
+</html>

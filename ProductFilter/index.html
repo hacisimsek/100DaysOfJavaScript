@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Static Template</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- css link -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: "#da373d"
+          },
+          fontFamily: {
+            nunito: "'Nunito Sans', sans-serif;"
+          }
+        },
+        container: {
+          center: true,
+          padding: "1.5rem"
+        }
+      }
+    };
+  </script>
+  
+</head>
+
+<body>
+  <header class="header">
+    <div class="container-header">
+      <h2 class="header-title">
+        Product Filter with JavaScript
+      </h2>
+    </div>
+  </header>
+  <div class="container">
+    <div class="display-column">
+      <div id="filters" class="side-bar">
+
+        <div class="side-bar-select">
+          <legend class="text-base font-medium text-gray-900 my-3">Country</legend>
+          <select id="country">
+            <option value="">-- Country --</option>
+            <option value="turkey">Turkey</option>
+            <option value="china">China</option>
+            <option value="france">France</option>
+            <option value="italy">Italy</option>
+          </select>
+        </div>
+
+        <div class="side-bar-size">
+          <legend class="side-bar-size-title">Size</legend>
+          <div id="size">
+            <div class="side-bar-size-item">
+              <input type="checkbox" value="S" />
+              <label>S</label />
+            </div>
+            <div class="side-bar-size-item">
+              <input type="checkbox" value="M" />
+              <label>M</label>
+            </div>
+            <div class="side-bar-size-item">
+              <input type="checkbox" value="L" />
+              <label>L</label>
+            </div>
+            <div class="side-bar-size-item">
+              <input type="checkbox" value="XL" />
+              <label>XL</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="side-bar-price">
+          <legend class="side-bar-price-title">Price</legend>
+          <div class="side-bar-price-item">
+            <input type="text" value="" id="price-min" />
+            <div class="side-bar-price-item-tire">&nbsp;-&nbsp;</div>
+            <input type="text" value="" id="price-max" />
+            <div class="side-bar-item-usd">&nbsp;usd&nbsp;</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="goods" class="product-list-container"></div>
+
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
